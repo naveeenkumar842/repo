@@ -1,0 +1,16 @@
+<h1>Welcome to Nims hospitals</h1>
+<br/>
+<h3>below are list of services we provide:</h3>
+{% if all_services %}
+<ul>
+    {% for service in all_services %}
+    <li><a href="/services/{{ service.categeogry }}">
+        {{ service.categeogry }}</a></li>
+
+
+        {% endfor %}
+
+
+   </ul>
+{% else %}
+{% endif %}
